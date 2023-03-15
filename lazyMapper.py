@@ -9,7 +9,9 @@ extensions = ('.osu')
 osuFiles = []
 i = 0
 
+print("----------")
 print("\nlazyMapper\n")
+print("----------")
 for subdir, dirs, files in os.walk(rootdir):
     for file in files:
         ext = os.path.splitext(file)[-1].lower()
