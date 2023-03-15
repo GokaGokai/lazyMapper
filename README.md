@@ -110,7 +110,7 @@ Select the osu file you want to copy from. [0-6]
 Done!  
   
 You should be able to see the new map in the folder, which was, in this example,    
-*xi - Wish upon Twin Stars (Chaoslitz) [lazyMapperCustom (DJ Sharpnel - WE LUV LAMA 2 (-Tynamo) [S1.0].osu)].osu*  
+*xi - Wish upon Twin Stars (Chaoslitz) [lazyMapper (DJ Sharpnel - WE LUV LAMA 2 (-Tynamo) [S1.0])].osu*  
 
 <br>   
 
