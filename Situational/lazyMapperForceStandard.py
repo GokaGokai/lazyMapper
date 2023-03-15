@@ -10,7 +10,7 @@ osuFiles = []
 i = 0
 
 print("----------")
-print("\nlazyMapper\n")
+print("\nlazyMapperForceStandard\n")
 print("----------")
 for subdir, dirs, files in os.walk(rootdir):
     for file in files:
@@ -21,7 +21,7 @@ for subdir, dirs, files in os.walk(rootdir):
             i = i + 1
             
 # print(osuFiles)
-input1 = osuFiles[int(input("\nWhich map to parse from? [0-" + str(i-1) + "]\n(Only for stats such as CS, AR, OD, HP..)\n"))]
+input1 = osuFiles[int(input("\nWhich map to parse from? [0-" + str(i-1) + "]\n(ForceStandard will overwrite with CS4 AR9 OD8 HP5 anyway doesn't matter)\n"))]
 
 print("\n---")
 print("0 - Square")
@@ -65,14 +65,14 @@ title = input1[0:input1.index('[')]
 start = 0
 end = 0
 bpm = 0.0
-divisor = 4*2
+divisor = 4
 output = []
 diffName = ""
 
 with open(input1, encoding='utf-8') as f:
     atTimingPoints = False
     atTimingPoints2 = False
-    otherMode = False
+    wasAR = False
 
     while(1):
         line = f.readline().rstrip()
@@ -80,7 +80,7 @@ with open(input1, encoding='utf-8') as f:
 
         if line == '[TimingPoints]':
             atTimingPoints = True
-        
+
         if line.__contains__("Version:"):
             if input2 == 0: diffName = "(Square)"
             if input2 == 1: diffName = "(Circle)"
@@ -89,26 +89,22 @@ with open(input1, encoding='utf-8') as f:
             output[len(output)-1] = "Version:lazyMapper "+diffName+"\n"
 
         # For mania or other game modes
-        if line.__contains__("Mode:") and not line.__contains__("0"):
+        if line.__contains__("Mode:"):
             output[len(output)-1] = "Mode: 0\n"
-            otherMode = True
 
-        if line.__contains__("ApproachRate:") and otherMode:
+        if line.__contains__("ApproachRate:"):
             output[len(output)-1] = "ApproachRate: 9\n"
             wasAR = True
 
-        if line.__contains__("HPDrainRate:") and otherMode:
+        if line.__contains__("HPDrainRate:"):
             output[len(output)-1] = "HPDrainRate: 5\n"
 
-        if line.__contains__("CircleSize:") and otherMode:
+        if line.__contains__("CircleSize:"):
             output[len(output)-1] = "CircleSize: 4\n"
     
-        if line.__contains__("OverallDifficulty:") and otherMode:
+        if line.__contains__("OverallDifficulty:"):
             output[len(output)-1] = "OverallDifficulty: 8\n"
-
-        if line.__contains__("ApproachRate:"):
-            wasAR = True
-
+        
         # For mania or other game modes
         if line.__contains__("SliderMultiplier:") and not wasAR:
             output[len(output)-1] = "ApproachRate: 9\n" + output[len(output)-1]

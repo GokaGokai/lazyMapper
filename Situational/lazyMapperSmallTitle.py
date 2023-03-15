@@ -65,7 +65,7 @@ title = input1[0:input1.index('[')]
 start = 0
 end = 0
 bpm = 0.0
-divisor = 4*2
+divisor = 4
 output = []
 diffName = ""
 
@@ -136,7 +136,7 @@ with open(input1, encoding='utf-8') as f:
 # ---
 # ---   Output
 # ---
-with open(title+"[lazyMapper "+diffName+"].osu", "w", encoding='utf-8') as file:
+with open(title+"[lM].osu", "w", encoding='utf-8') as file:
     for i in output:
         file.write(i)
     
@@ -208,4 +208,4 @@ with open(title+"[lazyMapper "+diffName+"].osu", "w", encoding='utf-8') as file:
         file.write(x)
         
 print("\nSucess:")
-print(title + "[lazyMapper "+diffName+"].osu was created")
+print(title + "[lM].osu was created")
