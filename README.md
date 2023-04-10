@@ -1,15 +1,13 @@
 # lazyMapper  
    
-<img src="/Ressources/showcase.PNG" alt="drawing" width="620"/>
-<img src="Ressources/Custom.gif" alt="drawing" width="520"/>
+<img src="Ressources/Custom.gif" alt="drawing" width="400"/>
 
 <br>  
 
-Generate <a href="#square">different kinds of Long Stream Maps</a> for *1/4* Time Signature and fixed BPM maps.   
+Generate <a href="#square">different types of Long Stream Maps</a> for 1/4 Time Signature and fixed BPM maps.   
 The notes start on the first timing point and end on the last.  
-No breaks. (Use *Beatmap Editor*)  
-The template folder includes <a href="https://osu.ppy.sh/beatmapsets/862695#osu/1804553">*WE LUV LAMA*</a> in various difficulties. (space aim levels)  
-      
+No breaks. (Use **Beatmap editor**)  
+
 <br>  
 
 ##  
@@ -17,99 +15,91 @@ The template folder includes <a href="https://osu.ppy.sh/beatmapsets/862695#osu/
 
 ## Usage  
 
-1- Download the <a href="https://github.com/GokaGokai/lazyMapper/releases/tag/0.1.1">latest release</a>  
+1- Download *lazyMapper.exe* from the <a href="https://github.com/GokaGokai/lazyMapper/releases">latest release</a>  
   
-2- Open Osu!, go to the editor, and choose a map     
+2- Open Osu!, go to the beatmap editor, and choose a beatmap     
    
-3- Open Song Folder in *File*, and copy *lazyMapper.exe* in it  
-*(Optional) If you want a custom template, copy it in as well*  
-  
-4- Upon double-clicking *lazyMapper.exe*, select one of the map difficulties (I would mostly look based on the OD personally)    
-  
+3- Run *lazyMapper.exe*
+(Only works if Osu! is installed in the default directory for now)  
 ```
-----------
+----------------------------------------------
+      lazyMapper
+        v1.0.0
+   By GokaGokai
+----------------------------------------------
 
-lazyMapper
 
-----------
-0 - DJ Sharpnel - WE LUV LAMA 2 (-Tynamo) [S1.0].osu
-1 - xi - Wish upon Twin Stars (Chaoslitz) [BASIC].osu
-2 - xi - Wish upon Twin Stars (Chaoslitz) [EXHAUST].osu
-3 - xi - Wish upon Twin Stars (Chaoslitz) [Gaia's ADVANCED].osu
-4 - xi - Wish upon Twin Stars (Chaoslitz) [HYPER].osu
-5 - xi - Wish upon Twin Stars (Chaoslitz) [NOVICE].osu
-6 - xi - Wish upon Twin Stars (Chaoslitz) [Wish].osu
-
-Which map to parse from? [0-6]
-(Only for stats such as CS, AR, OD, HP..)
+Searching for beatmap...
+7925it [00:01, 6394.18it/s]
+Beatmap found at: C:\Users\user\AppData\Local\osu!\Songs\1585863 YOASOBI - Love Letter\YOASOBI - Love Letter (ohm002) [Vivace].osu
+8513it [00:01, 6037.59it/s]
 ```
-User Input: `` 6``  
-<br>   
-  
     
 ```
----
+----------------
 0 - Square
 1 - Circle
 2 - Small Square
 3 - Custom
+4 - Wait lemme adjust speed!
 
-What kind of map do you want to generate? [0-3]
+What type of map to generate? [0-3]
 
 ```
 User Input: `` 3 `` 
 <br>    
   
 
-*(The third prompt will only show if you select Custom)*    
+*(This prompt will only show if you select Custom)*    
 ```
----
-0 - DJ Sharpnel - WE LUV LAMA 2 (-Tynamo) [S1.0].osu
-1 - xi - Wish upon Twin Stars (Chaoslitz) [BASIC].osu
-2 - xi - Wish upon Twin Stars (Chaoslitz) [EXHAUST].osu
-3 - xi - Wish upon Twin Stars (Chaoslitz) [Gaia's ADVANCED].osu
-4 - xi - Wish upon Twin Stars (Chaoslitz) [HYPER].osu
-5 - xi - Wish upon Twin Stars (Chaoslitz) [NOVICE].osu
-6 - xi - Wish upon Twin Stars (Chaoslitz) [Wish].osu
+----------------
+0 - WELUVLAMAS0.5.osu
+1 - WELUVLAMAS0.6.osu
+2 - WELUVLAMAS0.7.osu
+3 - WELUVLAMAS0.8.osu
+4 - WELUVLAMAS0.9.osu
+5 - WELUVLAMAS1.0.osu
 
-Select the osu file you want to copy from. [0-6]
-(Assuming you dragged it in the same folder already)
+Select the scaling of WE LUV LAMA. (Space aim difficulty) [0-5]
 ```
-User Input: `` 0 ``  (Using a template in the *CustomTemplate* folder)   
+User Input: `` 5 `` 
 
 <br>  
 
-A new difficulty should appear:  
-*lazyMapper (DJ Sharpnel - WE LUV LAMA 2 (-Tynamo) [S1.0])*   
+```
+Success:
+YOASOBI - Love Letter (ohm002) [lazyMapper (WELUVLAMAS1.0)].osu was created
+``` 
   
-Just go back to Osu! and find it. (Refresh by going in and out)   
+Go back to Osu! and find it.
 
 <br>   
 
-Done!  
+**Done!**  
 
-##### Using *lazyMapper.exe* on <a href="https://osu.ppy.sh/beatmapsets/242462#osu/559673">*Wish upon Twin Stars*</a>
 
 <br> 
 <br>  
 
+##### Using *lazyMapper.exe* on <a href="https://osu.ppy.sh/beatmapsets/242462#osu/559673">*Wish upon Twin Stars*</a>
+
 ### Square
-*lazyMapper (Square)*  
+**lazyMapper (Square)**  
 
 ![](/Ressources/Square.gif)
 
 ### Circle
-*lazyMapper (Circle)*
+**lazyMapper (Circle)**
 
 ![](/Ressources/Circle.gif)
 
 ### Small Square
-*lazyMapper (Small Square)*
+**lazyMapper (Small Square)**
 
 ![](/Ressources/SmallSquare.gif)
 
 ### Custom
-*lazyMapper (DJ Sharpnel - WE LUV LAMA 2 (-Tynamo) [S1.0])*   
+**lazyMapper (WELUVLAMAS1.0)**   
 
 ![](/Ressources/Custom.gif)
 
