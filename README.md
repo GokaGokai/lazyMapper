@@ -4,8 +4,8 @@
 
 <br>  
 
-Generate <a href="#square">different types of Long Stream Maps</a> for 1/4 Time Signature and fixed BPM maps.   
-The notes start on the first timing point and end on the last.  
+**Generate** <a href="#square">different types of Long Stream Maps</a> for 1/4 Time Signature and fixed BPM maps.   
+The notes start on the **first timing point and end on the last**.  
 No breaks. (Use **Beatmap editor**)  
 
 <br>  
@@ -17,10 +17,10 @@ No breaks. (Use **Beatmap editor**)
 
 1- Download *lazyMapper.exe* from the <a href="https://github.com/GokaGokai/lazyMapper/releases">latest release</a>  
   
-2- Open Osu!, go to the beatmap editor, and choose a beatmap     
+2- Open **Osu!**, go to the **beatmap editor** and select a **beatmap**       
    
-3- Run *lazyMapper.exe*
-(Only works if Osu! is installed in the default directory for now)  
+3- Run *lazyMapper.exe*  
+*(Only works if **Osu!** is installed in the default directory, for now, use the <a href="https://github.com/GokaGokai/lazyMapper/tree/2186bbd14534484e8696281b45759ce4f27956d1">previous version</a> if it's different)*  
 ```
 ----------------------------------------------
       lazyMapper
@@ -46,10 +46,7 @@ Beatmap found at: C:\Users\user\AppData\Local\osu!\Songs\1585863 YOASOBI - Love 
 What type of map to generate? [0-3]
 
 ```
-User Input: `` 3 `` 
-<br>    
-  
-
+User Input: `` 3 ``  
 *(This prompt will only show if you select Custom)*    
 ```
 ----------------
@@ -62,23 +59,15 @@ User Input: `` 3 ``
 
 Select the scaling of WE LUV LAMA. (Space aim difficulty) [0-5]
 ```
-User Input: `` 5 `` 
-
-<br>  
+User Input: `` 5 ``  
 
 ```
 Success:
 YOASOBI - Love Letter (ohm002) [lazyMapper (WELUVLAMAS1.0)].osu was created
 ``` 
-  
-Go back to Osu! and find it.
-
-<br>   
 
 **Done!**  
 
-
-<br> 
 <br>  
 
 ##### Using *lazyMapper.exe* on <a href="https://osu.ppy.sh/beatmapsets/242462#osu/559673">*Wish upon Twin Stars*</a>
