@@ -59,7 +59,7 @@ Example User Input: `` 3 ``
 
 Select the scaling of WE LUV LAMA. (Space aim difficulty) [0-5]
 ```
-Example user input: `` 5 ``  
+Example User Input: `` 5 ``  
 
 ```
 Success:
